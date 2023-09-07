@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <H2>Calculadora de Dois Valores com JavaScript</H2>
+    <script>
+        let valor1 = parseFloat(prompt("Digite o Primeiro Valor"))
+        let valor2 = parseFloat(prompt("Digite o Segundo Valor"))
+        let resultado
+        let operacao = parseInt(prompt("Digite a Operação desejada pelo número: 1- Adição|2- Subtração|3- Divisão| 4- Multiplicação"))
+
+        if(operacao == 1){
+            resultado = valor1 + valor2
+            document.write("O Resultado é: ", resultado)
+        } else if(operacao == 2){
+            resultado = valor1 - valor2
+            document.write("O Resultado é: ", resultado)
+        }  else if(operacao == 3){
+            resultado = valor1 / valor2
+            document.write("O Resultado é: ", resultado)
+        }   else if(operacao == 4){
+            resultado = valor1 * valor2
+            document.write("O Resultado é: ", resultado)}
+
+            else{
+                document.write("Operação Incorreta!")
+            }
+
+
+
+    </script>
+</body>
+</html>

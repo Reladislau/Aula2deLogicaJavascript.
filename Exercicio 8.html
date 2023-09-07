@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final de Libertadores</title>
+</head>
+<body>
+
+    <h2>Final de Libertadores</h2>
+
+    <script>
+        let golsC = parseInt(prompt("Digite o Número de Gols do Corinthians"))
+        let golsP = parseInt(prompt("Digite o Número de Gols do Palmeiras"))
+
+        document.write("Número de Gols do Corinthians: ", golsC, " Gols<br><br>")
+        document.write("Número de Gols do Palmeiras: ", golsP, " Gols<br><br>")
+
+        if(golsC>golsP){
+            document.write("Corinthians Campeão da Libertadores!")
+        } else if(golsP>golsC){
+            document.write("Palmeiras Campeão da Libertadores!")
+        } else if(golsP == golsC){
+            document.write("Empate dos Times!")
+        }
+
+
+    </script>
+
+    
+</body>
+</html>

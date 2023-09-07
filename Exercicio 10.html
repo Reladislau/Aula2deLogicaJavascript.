@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perimetro</title>
+</head>
+<body>
+    <h2>Dados de Poligono</h2>
+
+    <script>
+        let lado = parseInt(prompt("Digite o Número de lados"))
+        let tamanho = parseFloat(prompt("Digite o Tamanho dos lados"))
+        let perimetro
+
+        if(lado == 3){
+            document.write("Seu polígono é um Triângulo<br>")
+            perimetro = tamanho * lado
+            document.write("O Seu perimetro é: ", perimetro)
+        } else if(lado == 4){
+            document.write("Seu polígono é um Quadrado<br>")
+            perimetro = tamanho * lado
+            document.write("O Seu perimetro é: ", perimetro)
+        } else if(lado == 5){
+            document.write("Seu polígono é um Pentagono<br>")
+            perimetro = tamanho * lado
+            document.write("O Seu perimetro é: ", perimetro)
+        } else if(lado<3){
+            document.write("Não é um Poligono")
+        } else if(lado>5){
+            document.write("Poligono não indentificado")
+        }
+
+
+    </script>
+
+</body>
+</html>
